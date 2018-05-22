@@ -3,11 +3,9 @@
 
 
 def sum_array(arr):
-    # your code here
     if not arr or len(arr) <= 2:
         return 0
-    else:
-        return sum(arr) - max(arr) - min(arr)
+    return sum(arr) - max(arr) - min(arr)
 
 
 def main():
