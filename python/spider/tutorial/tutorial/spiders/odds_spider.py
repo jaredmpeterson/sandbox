@@ -7,7 +7,7 @@ class QuotesSpider(scrapy.Spider):
 
     def start_requests(self):
         urls = [
-            'https://www.sportsbook.ag/sbk/sportsbook4/golf-betting/2018-fort-worth-invitational-odds-to-win.sbk',
+            '''https://www.sportsbook.ag/sbk/sportsbook4/golf-betting/2018-fort-worth-invitational-odds-to-win.sbk''',
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
